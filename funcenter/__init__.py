@@ -2,11 +2,15 @@ __version__ = '1.0'
 import time
 def uncharsplit(list):
     return ''.join(list)
+
+
 def charsplit(str):
     x = []
     for char in str:
         x.append(char)
     return x
+
+
 def check_similarity(test, check, rating, debug = False):
     # SETUP
     score = 0
@@ -155,31 +159,48 @@ def check_similarity(test, check, rating, debug = False):
         return True
     else:
         return False
-# NUMBERS
+
+
 def isdecimal(var):
     if var.is_integer():
-        decimal = False
+        return False
     else:
-        decimal = True
-    return decimal
+        return True
+
+
+def is_decimal(var):
+    if var.is_integer():
+        return False
+    else:
+        return True
+
+
 def factorial(num):
     if num < 0:
-        factorial = "\033[0;31mInputError: Factorial does not exist for negative numbers"
+        return False
     elif num == 0:
-       factorial = 1
+       return 1
     else:
         factorial = 1
         for i in range(1, num + 1):
            factorial = factorial * i
-    return factorial
+        return factorial
+
+
 # PRINTING
-def println(str, count = 1):
-    print("\n"*count + str)
+def println(str, x = 1):
+    print(str + ("\n"*x))
+
+
 def printsln(str):
     print(str, end='')
-def printx(str, count):
-    for i in range(0, count):
+
+ 
+def printx(str, x):
+    for i in range(0, x):
         print(str)
+
+
 def typewriter(str, speed = 1):
     if speed == 1:
         speed = 0.18
@@ -187,12 +208,11 @@ def typewriter(str, speed = 1):
         speed = 0.1
     elif speed == 3:
         speed = 0.03
-    if '\033' in str:
-        print
     for char in str:
         time.sleep(speed)
         print(char, end='', flush=True)
     print()
+
 # FORMATTING
 def bold(str):
     output = "\033[1m" + str + "\033[0m"

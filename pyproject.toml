@@ -2,7 +2,12 @@
 name = "funcenter"
 version = "1.0"
 description = "Some random functions I made... includes color formatting, text formatting, basic math, and most of all... dumb algorithms. Enjoy."
+license = "MIT"
 authors = ["uncenter <uncenteristaken@gmail.com>"]
+readme = "README.md"
+homepage = "https://uncenter.org/funcenter"
+repository = "https://github.com/intricateavocado/funcenter"
+keywords = ["color", "math", "printing", "simple"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
