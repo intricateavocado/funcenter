@@ -1,5 +1,6 @@
-__version__ = '1.0'
+__version__ = '1.01'
 import time
+
 def uncharsplit(list):
     return ''.join(list)
 
