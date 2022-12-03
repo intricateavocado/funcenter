@@ -1,4 +1,4 @@
-__version__ = '1.01'
+__version__ = '1.02'
 import time
 
 def uncharsplit(list):
@@ -188,6 +188,65 @@ def factorial(num):
         return factorial
 
 
+def factors(num):
+    if num < 1000000:
+        factors = []
+        num_loop = 1
+        while num_loop <= num:
+            if num % num_loop == 0:
+                factors.append(num_loop)
+            num_loop += 1
+        return factors
+    else:
+        return None
+
+
+def isprime(num):
+    if num < 1000000:
+        factors = []
+        num_loop = 1
+        while num_loop <= num:
+            if num % num_loop == 0:
+                factors.append(num_loop)
+            num_loop += 1
+        if len(factors) > 2:
+            return False
+        else:
+            return True
+    else:
+        return None
+
+
+def is_prime(num):
+    if num < 1000000:
+        factors = []
+        num_loop = 1
+        while num_loop <= num:
+            if num % num_loop == 0:
+                factors.append(num_loop)
+            num_loop += 1
+        if len(factors) > 2:
+            return False
+        else:
+            return True
+    else:
+        return None
+
+def mp(num):
+    steps = 0
+    while result >= 10:
+        num = str(num)
+        nums = list(num)
+        x = len(nums)
+        y = 1
+        while x > 0:
+            z = int(nums[x-1])
+            y = y*z
+            x -= 1
+        result = y
+        steps += 1
+
+
 # PRINTING
 def println(str, x = 1):
     print(str + ("\n"*x))
@@ -213,6 +272,7 @@ def typewriter(str, speed = 1):
         time.sleep(speed)
         print(char, end='', flush=True)
     print()
+
 
 # FORMATTING
 def bold(str):
@@ -277,7 +337,8 @@ def format(color = ''):
         print("\033[0;97m", end='')
     elif color == 'clear':
         print("\033[0m", end='')
-        
+
+
 def clear():
     print("\033[0m", end='')
 ### COLORS
@@ -291,6 +352,8 @@ def black(str = '', setColor = False):
         else:
             output = "\033[0;30m" + str + "\033[0m"
     return output
+
+
 def red(str = '', setColor = False):
     if str == '':
         print("\033[0;31m", end='')
@@ -361,6 +424,8 @@ def white(str = '', setColorColor = False):
         else:
             output = "\033[0;37m" + str + "\033[0m"
     return output
+
+
 def color(color = '', str = ''):
     if str == '':
         if color == 'black':
@@ -433,6 +498,8 @@ def color(color = '', str = ''):
         else:
             output = None
         return output
+
+
 def fprint(color, str):
     colors = ['bold', 'b', 'italic', 'i', 'underline', 'underl', 'ul', 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'bright_black', 'bright_red', 'bright_green', 'bright_yellow', 'bright_blue', 'bright_magenta', 'bright_cyan', 'bright_white']
     if color in colors:
@@ -478,6 +545,8 @@ def fprint(color, str):
             print(str)
     else:
         print(color)
+
+
 def cprint(color, str):
     colors = ['bold', 'b', 'italic', 'i', 'underline', 'underl', 'ul', 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'bright_black', 'bright_red', 'bright_green', 'bright_yellow', 'bright_blue', 'bright_magenta', 'bright_cyan', 'bright_white']
     if color in colors:

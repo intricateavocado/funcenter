@@ -38,8 +38,12 @@ Some simple printing functions.
 
 ### Math
 Very very minimal and basic:
-- isdecimal(`var`)
+- is_decimal(`var`)
   - Returns <span style="color:blue">`True`</span> if `var` is a decimal.
+- is_prime(`num`)
+  - Returns  <span style="color:blue">`True`</span> if `num` is prime.
+- factors(`num`)
+  - Returns a <span style="color:blue">list</span> of the factors of `num`.
 - factorial(`num`)
   - Returns the factorial of `num`
 
@@ -49,5 +53,7 @@ Very very minimal and basic:
   - Returns a <span style="color:blue">list</span> of each character in `str`.
 - uncharsplit(`list`)
   - Exactly what it sounds like. The reverse of the above; Returns a <span style="color:blue">string</span> of `list`. And yes I know how easy this is. I wanted it.
+
+Any other functions not listed here are in development. Check back later.
   
 [^1]: Work in progress. Use caution.
