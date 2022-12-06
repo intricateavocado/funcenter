@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "funcenter"
-version = "1.02"
+version = "1.02.1"
 description = "Some random functions I made... includes color formatting, text formatting, basic math, and most of all... dumb algorithms. Enjoy."
 license = "MIT"
 authors = ["uncenter <uncenteristaken@gmail.com>"]
