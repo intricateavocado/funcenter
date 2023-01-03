@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "funcenter"
-version = "1.02.1"
+version = "1.03.1"
 description = "Some random functions I made... includes color formatting, text formatting, basic math, and most of all... dumb algorithms. Enjoy."
 license = "MIT"
-authors = ["uncenter <uncenteristaken@gmail.com>"]
+authors = ["uncenter <contact@uncenter.org>"]
 readme = "README.md"
 homepage = "https://uncenter.org/funcenter"
 repository = "https://github.com/intricateavocado/funcenter"

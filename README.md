@@ -32,7 +32,7 @@ Some simple printing functions.
     str
     str
     ```
-- typewriter(`str`, `speed`)
+- typewriter(`str`, `speed`)[^1]
   - Print `str` character-by-character (typewriter-like effect) using `speed` *(from slowest to fastest: 1, 2, 3)*.
   - **<span style="color:red">`DO NOT USE WITH ESCAPE CHARACTERS`</span>**
 
@@ -40,15 +40,10 @@ Some simple printing functions.
 Very very minimal and basic:
 - is_decimal(`var`)
   - Returns <span style="color:blue">`True`</span> if `var` is a decimal.
-- is_prime(`num`)
-  - Returns  <span style="color:blue">`True`</span> if `num` is prime.
-- factors(`num`)
-  - Returns a <span style="color:blue">list</span> of the factors of `num`.
 - factorial(`num`)
   - Returns the factorial of `num`
 
 ### Other
-- check_similarity(`str1`, `str2`, `rating`, `debug`)[^1]
 - charsplit(`str`)
   - Returns a <span style="color:blue">list</span> of each character in `str`.
 - uncharsplit(`list`)
